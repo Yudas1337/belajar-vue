@@ -13,11 +13,18 @@
     "test:unit:dev": "cypress open --component",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "build:tailwind": "ts-node tailwind.config.js && tailwindcss -o ./dist/style.css"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "flowbite": "^2.5.2",
+    "flowbite-vue": "^0.1.6",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14",
     "vue": "^3.5.12",
-    "vue-router": "^4.0.13"
+    "vue-router": "^4.0.13",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.4",
@@ -31,6 +38,7 @@
     "eslint-plugin-vue": "^9.30.0",
     "npm-run-all2": "^7.0.1",
     "start-server-and-test": "^2.0.8",
+    "ts-node": "^10.9.2",
     "typescript": "~5.6.3",
     "vite": "^5.4.10",
     "vue-tsc": "^2.1.10"

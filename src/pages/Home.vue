@@ -1,3 +1,6 @@
 <template>
-  <h1>Ini Halaman Home</h1>
+  <Jumbotron/>
 </template>
+<script lang="ts" setup>
+import Jumbotron from "@/components/Jumbotron.vue";
+</script>
